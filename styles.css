@@ -36,11 +36,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: left;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    width: 95%;
-    height: 3vh;
-    font-size: 1.8vw;
+    width: 100%;
+    height: 5%;
+    font-size: 200%;
     color: black;
     text-decoration: none;
 }
@@ -48,11 +46,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: left;
-    padding-left: 0.5em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    padding-left: 5%;
     width: 100%;
-    height: 3vh;
+    height: 100%;
     text-decoration: none;
 }
 .dash-link > a:visited{
@@ -62,10 +58,10 @@ body{
     background-color: darkslateblue;
 }
 .link-spacer{
-    width: 15%;
+    width: 25%;
 }
 a > img{
-    width: 1em;
+    width: 15%;
 }
 #dashboard > h1{
     display: flex;
@@ -74,10 +70,10 @@ a > img{
     width: 100%;
     margin-top: 5vh;
     margin-bottom: 2.5vh;
-    font-size: 2.6vw;
+    font-size:250%;
 }
 h1 > img{
-    width: 2em;
+    width: 20%;
 }
 #searchbar{
     display: flex;
@@ -92,14 +88,40 @@ h1 > img{
     grid-area: content-pane;
 }
 .sb-top{
-    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
     height: 50%;
-    border-style: solid;
 }
 .sb-bottom{
     background-color: coral;
     width: 100%;
     height: 50%;
+}
+.search{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 60em;
+    width: 40%;
+    height: 100%;
     border-style: solid;
+    background-color: aqua;
+}
+.user-panel{
+    display: flex;
+    max-width: 60em;
+    width: 40%;
+    border-style: solid;
+    background-color:lightgoldenrodyellow;
+}
+.s-input{
+    width:75%;
+    height: 30%;
+    border-radius: 1em;
+}
+.user-panel{
+    width: 40%;
+    height: 100%;
 }
