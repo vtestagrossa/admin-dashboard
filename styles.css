@@ -101,20 +101,45 @@ h1 > img{
 }
 .search{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     min-width: 60em;
     width: 40%;
     height: 100%;
-    border-style: solid;
     background-color: aqua;
+}
+.search a{
+    width: 5%;
+    margin-right: 2.5%;
+}
+.search a > img{
+    width: 100%;
 }
 .user-panel{
     display: flex;
+    align-items: center;
+    justify-content: right;
     max-width: 60em;
     width: 40%;
-    border-style: solid;
+    height: 100%;
     background-color:lightgoldenrodyellow;
+}
+.user-panel a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    border-style: solid;
+}
+.user-panel h1{
+    font-size: 150%;
+    width: 30%;
+    text-align: center;
+}
+.user-panel a > img{
+    width: 35%;
+    height: 35%;
 }
 .s-input{
     width:75%;
