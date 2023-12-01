@@ -78,7 +78,7 @@ h1 > img{
 #searchbar{
     display: flex;
     flex-direction: column;
-    background-color: gray;
+    background-color: white;
     grid-area: search;
 }
 #content-pane{
@@ -95,6 +95,9 @@ h1 > img{
     height: 50%;
 }
 .sb-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: coral;
     width: 100%;
     height: 50%;
@@ -106,7 +109,7 @@ h1 > img{
     min-width: 60em;
     width: 40%;
     height: 100%;
-    background-color: aqua;
+    background-color: white;
 }
 .search a{
     width: 5%;
@@ -118,20 +121,18 @@ h1 > img{
 .user-panel{
     display: flex;
     align-items: center;
-    justify-content: right;
-    max-width: 60em;
+    justify-content: center;
+    max-width: 40em;
     width: 40%;
     height: 100%;
-    background-color:lightgoldenrodyellow;
 }
 .user-panel a{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 30%;
-    max-width: 125px;
+    max-width: 75px;
     height: 100%;
-    border-style: solid;
 }
 .user-panel h1{
     font-size: 125%;
@@ -147,13 +148,46 @@ h1 > img{
     max-width: 125px;
     height: 100%;
 }
-.user{
+.user-panel .user{
     display: inline-block;
-    width: 75%;
-    height: 75%;
+    width: 50%;
+    height: 50%;
     border-radius: 50%;
+    background-color:gainsboro;
 
     object-fit: cover;
+}
+.user{
+    width: 75%;
+    height: 75%;
+    max-width:100px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color:gainsboro;
+
+    object-fit: cover;
+}
+.user-control-left{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-style: solid;
+    width: 40%;
+    height: 100%;
+    max-width: 35em;
+    background-color:aqua;
+}
+.greeting-panel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    border-style: solid;
+    padding-left: 2em;
+}
+.greet{
+    margin:0;
+    padding:0;
 }
 .s-input{
     width:75%;
