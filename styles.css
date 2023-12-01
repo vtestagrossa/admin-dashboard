@@ -26,11 +26,13 @@ body{
     align-items: center;
     justify-content: left;
     background-color: white;
-    border-style: solid;
-    border-color: black;
     grid-area: dash;
+    border-width: .2em;
+    border-style: solid;
     border-bottom-right-radius: 2em;
     border-top-left-radius: 3em;
+    box-shadow: .5em .75em 1em rgb(27, 27, 74);
+    position: relative;
 }
 #dashboard > .dash-link{
     display: flex;
@@ -68,8 +70,8 @@ a > img{
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    margin-top: 5vh;
-    margin-bottom: 2.5vh;
+    margin-top: 15%;
+    margin-bottom: 16.5%;
     font-size:250%;
 }
 h1 > img{
@@ -79,12 +81,14 @@ h1 > img{
     display: flex;
     flex-direction: column;
     background-color: white;
+    border-left-width: 0;
+    border-style: solid;
     grid-area: search;
+    box-shadow: .5em .75em .75em rgb(27, 27, 74);
+    position: relative;
 }
 #content-pane{
     background-color: darkslateblue;
-    border-style: solid;
-    border-color: black;
     grid-area: content-pane;
 }
 .sb-top{
@@ -98,7 +102,6 @@ h1 > img{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: coral;
     width: 100%;
     height: 50%;
 }
@@ -171,18 +174,15 @@ h1 > img{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-style: solid;
     width: 40%;
     height: 100%;
     max-width: 35em;
-    background-color:aqua;
 }
 .greeting-panel{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    border-style: solid;
     padding-left: 2em;
 }
 .greet{
@@ -220,13 +220,13 @@ h1 > img{
 }
 .user-control-right button:hover{
     background-color:midnightblue;
-    color: white;
     border-style: solid;
+    color: white;
     border-color: white;
 }
 .user-control-right button:active{
     background-color:white;
-    color: darkslateblue;
     border-style: solid;
+    color: darkslateblue;
     border-color: darkslateblue;
 }
