@@ -198,3 +198,35 @@ h1 > img{
     width: 40%;
     height: 100%;
 }
+.user-control-right{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    max-width: 35em;
+    height: 100%;
+}
+.user-control-right button{
+    text-align: center;
+    width: 20%;
+    height: 50%;
+    font-size: 130%;
+    background-color: darkslateblue;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    border-width: 0.1em;
+    border-radius: 30%;
+}
+.user-control-right button:hover{
+    background-color:midnightblue;
+    color: white;
+    border-style: solid;
+    border-color: white;
+}
+.user-control-right button:active{
+    background-color:white;
+    color: darkslateblue;
+    border-style: solid;
+    border-color: darkslateblue;
+}
