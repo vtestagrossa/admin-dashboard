@@ -20,72 +20,6 @@ body{
         "dash content-pane content-pane content-pane content-pane"
         "dash content-pane content-pane content-pane content-pane";
 }
-/*Content pane section*/
-#content-pane{
-    display: grid;
-    background-color: rgb(115, 99, 223);
-    grid-area: content-pane;
-    grid-template-rows: repeat(10, 10%);
-    grid-template-columns: repeat(10, 10%);
-    grid-template-areas:
-        "pheader pheader pheader pheader pheader pheader pheader aheader aheader aheader"
-        "proj proj proj proj proj proj proj announ announ announ"
-        "proj proj proj proj proj proj proj announ announ announ"
-        "proj proj proj proj proj proj proj announ announ announ"
-        "proj proj proj proj proj proj proj announ announ announ"
-        "proj proj proj proj proj proj proj theader theader theader"
-        "proj proj proj proj proj proj proj trend trend trend"
-        "proj proj proj proj proj proj proj trend trend trend"
-        "proj proj proj proj proj proj proj trend trend trend"
-        "proj proj proj proj proj proj proj trend trend trend";
-}
-.pheader{
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: flex-start;
-    align-items: start;
-    padding-left: 5%;
-    grid-area: pheader;
-}
-.pheader h2{
-    color: white;
-    font-size: 150%;
-}
-.projects{
-    grid-area: proj;
-    background-color: red;
-    border-style: solid;
-}
-.aheader{
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: flex-start;
-    align-items: start;
-    padding-left: 5%;
-    grid-area: aheader;
-}
-.aheader  h2{
-    color: white;
-    font-size: 150%;
-}
-.announce{
-    grid-area: announ;
-    background-color: purple;
-    border-style: solid;
-}
-.theader{
-    grid-area: theader;
-    background-color:white;
-    border-style:solid;
-}
-.trending{
-    grid-area: trend;
-    background-color: green;
-    border-style: solid;
-}
-.grid-item{
-    border-style: solid;
-}
 /*Dashboard Section*/
 #dashboard{
     display: flex;
@@ -297,4 +231,77 @@ h1 > img{
     border-style: solid;
     color: darkslateblue;
     border-color: darkslateblue;
+}
+/*Content pane section*/
+#content-pane{
+    display: grid;
+    background-color: rgb(115, 99, 223);
+    grid-area: content-pane;
+    grid-template-rows: repeat(10, 10%);
+    grid-template-columns: repeat(10, 10%);
+    grid-template-areas:
+        "pheader pheader pheader pheader pheader pheader pheader aheader aheader aheader"
+        "proj proj proj proj proj proj proj announ announ announ"
+        "proj proj proj proj proj proj proj announ announ announ"
+        "proj proj proj proj proj proj proj announ announ announ"
+        "proj proj proj proj proj proj proj announ announ announ"
+        "proj proj proj proj proj proj proj theader theader theader"
+        "proj proj proj proj proj proj proj trend trend trend"
+        "proj proj proj proj proj proj proj trend trend trend"
+        "proj proj proj proj proj proj proj trend trend trend"
+        "proj proj proj proj proj proj proj trend trend trend";
+}
+/*Projects section*/
+.pheader{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: start;
+    padding-left: 5%;
+    grid-area: pheader;
+}
+.pheader h2{
+    color: white;
+    font-size: 150%;
+}
+.projects{
+    grid-area: proj;
+    background-color: red;
+    border-style: solid;
+}
+/*Announcements section*/
+.aheader{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: start;
+    padding-left: 5%;
+    grid-area: aheader;
+}
+.aheader  h2{
+    color: white;
+    font-size: 150%;
+}
+.announce{
+    grid-area: announ;
+    background-color: purple;
+    border-style: solid;
+}
+/*Trending Section*/
+.theader{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: start;
+    padding-left: 5%;
+    grid-area: theader;
+}
+.theader h2{
+    color: white;
+    font-size: 150%;
+}
+.trending{
+    grid-area: trend;
+    background-color: green;
+    border-style: solid;
 }
