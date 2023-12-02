@@ -262,12 +262,24 @@ h1 > img{
 }
 .pheader h2{
     color: white;
-    font-size: 150%;
+    font-size: 180%;
 }
 .projects{
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    padding: 4%;
+    padding-top: 0;
+    gap: 4%;
     grid-area: proj;
-    background-color: red;
-    border-style: solid;
+}
+.project{
+    background-color: white;
+    border-left-style: solid;
+    border-radius: 4%;
+    border-left-color: black;
+    border-left-width: 0.6em;
+    box-shadow: .5em .75em .75em rgb(27, 27, 74);
+    position: relative;
 }
 /*Announcements section*/
 .aheader{
@@ -280,7 +292,7 @@ h1 > img{
 }
 .aheader  h2{
     color: white;
-    font-size: 150%;
+    font-size: 180%;
 }
 .announce{
     grid-area: announ;
