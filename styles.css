@@ -46,8 +46,10 @@ body{
     align-items: start;
     padding-left: 5%;
     grid-area: pheader;
-    background-color:gray;
-    border-style:solid;
+}
+.pheader h2{
+    color: white;
+    font-size: 150%;
 }
 .projects{
     grid-area: proj;
@@ -61,8 +63,10 @@ body{
     align-items: start;
     padding-left: 5%;
     grid-area: aheader;
-    background-color:blue;
-    border-style:solid;
+}
+.aheader  h2{
+    color: white;
+    font-size: 150%;
 }
 .announce{
     grid-area: announ;
