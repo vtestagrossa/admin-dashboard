@@ -1,6 +1,6 @@
 body{
     margin: 0px;
-    background-color: darkslateblue;
+    background-color: rgb(115, 99, 223);
 }
 .grid-container{
     margin: 0px;
@@ -20,6 +20,69 @@ body{
         "dash content-pane content-pane content-pane content-pane"
         "dash content-pane content-pane content-pane content-pane";
 }
+/*Content pane section*/
+#content-pane{
+    display: grid;
+    background-color: rgb(115, 99, 223);
+    grid-area: content-pane;
+    grid-template-rows: repeat(10, 10%);
+    grid-template-columns: repeat(10, 10%);
+    grid-template-areas:
+        "pheader pheader pheader pheader pheader pheader pheader aheader aheader aheader"
+        "proj proj proj proj proj proj proj announ announ announ"
+        "proj proj proj proj proj proj proj announ announ announ"
+        "proj proj proj proj proj proj proj announ announ announ"
+        "proj proj proj proj proj proj proj announ announ announ"
+        "proj proj proj proj proj proj proj theader theader theader"
+        "proj proj proj proj proj proj proj trend trend trend"
+        "proj proj proj proj proj proj proj trend trend trend"
+        "proj proj proj proj proj proj proj trend trend trend"
+        "proj proj proj proj proj proj proj trend trend trend";
+}
+.pheader{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: start;
+    padding-left: 5%;
+    grid-area: pheader;
+    background-color:gray;
+    border-style:solid;
+}
+.projects{
+    grid-area: proj;
+    background-color: red;
+    border-style: solid;
+}
+.aheader{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: start;
+    padding-left: 5%;
+    grid-area: aheader;
+    background-color:blue;
+    border-style:solid;
+}
+.announce{
+    grid-area: announ;
+    background-color: purple;
+    border-style: solid;
+}
+.theader{
+    grid-area: theader;
+    background-color:white;
+    border-style:solid;
+}
+.trending{
+    grid-area: trend;
+    background-color: green;
+    border-style: solid;
+}
+.grid-item{
+    border-style: solid;
+}
+/*Dashboard Section*/
 #dashboard{
     display: flex;
     flex-direction: column;
@@ -31,7 +94,7 @@ body{
     border-style: solid;
     border-bottom-right-radius: 2em;
     border-top-left-radius: 3em;
-    box-shadow: 1em .75em 2em rgb(27, 27, 74);
+    box-shadow: 1em 2em 2em rgb(27, 27, 74);
     position: relative;
 }
 #dashboard > .dash-link{
@@ -57,7 +120,7 @@ body{
     color: black;
 }
 .dash-link > a:hover{
-    background-color: darkslateblue;
+    background-color:  rgb(115, 99, 223);
 }
 .link-spacer{
     width: 15%;
@@ -77,6 +140,7 @@ a > img{
 h1 > img{
     width: 20%;
 }
+/*Searchbar Section*/
 #searchbar{
     display: flex;
     flex-direction: column;
@@ -87,10 +151,6 @@ h1 > img{
     grid-area: search;
     box-shadow: .5em .75em .75em rgb(27, 27, 74);
     position: relative;
-}
-#content-pane{
-    background-color: darkslateblue;
-    grid-area: content-pane;
 }
 .sb-top{
     display: flex;
@@ -122,6 +182,7 @@ h1 > img{
 .search a > img{
     width: 100%;
 }
+/*User display section of searchbar*/
 .user-panel{
     display: flex;
     align-items: center;
@@ -161,6 +222,7 @@ h1 > img{
 
     object-fit: cover;
 }
+/*Greeting and profile section of searchbar*/
 .user{
     width: 75%;
     height: 75%;
@@ -199,6 +261,7 @@ h1 > img{
     width: 40%;
     height: 100%;
 }
+/*User actions section of searchbar*/
 .user-control-right{
     display: flex;
     justify-content: space-around;
@@ -220,7 +283,7 @@ h1 > img{
     border-radius: 30%;
 }
 .user-control-right button:hover{
-    background-color:midnightblue;
+    background-color: rgb(115, 99, 223);
     border-style: solid;
     color: white;
     border-color: white;
