@@ -5,8 +5,8 @@ body{
 .grid-container{
     margin: 0px;
     display: grid;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     grid-template:  15% 5% 10% 10% 10% 10% 10% 10% 10% 10%/ min(20%, 350px) 20% 20% 20% 1fr;
     grid-template-areas: 
         "dash search search search search"
@@ -166,6 +166,8 @@ h1 > img{
     height: 75%;
     max-width:100px;
     border-radius: 50%;
+    border-style: solid;
+    border-width: 0.01em;
     display: inline-block;
     background-color:gainsboro;
 
@@ -304,6 +306,7 @@ h1 > img{
     height: 33%;
     width: 100%;
     margin: 0;
+    margin-top: 1%;
     color:rgb(27, 27, 74);
 }
 .bottom-links{
@@ -319,11 +322,17 @@ h1 > img{
     height: 75%;
 }
 .bottom-links > div a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30%;
     width:33%;
-    height: 100%;
+    height: 75%;
 }
 .bottom-links > div a:hover{
     text-decoration: none;
+    background-color: rgb(115, 99, 223);
+    box-shadow: .5em .75em .75em rgb(27, 27, 74);
 }
 .bottom-links > div a > img{
     width: 50%;
@@ -343,9 +352,46 @@ h1 > img{
     font-size: 180%;
 }
 .announce{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    padding-left: 10%;
     grid-area: announ;
-    background-color: purple;
+    background-color: white;
     border-style: solid;
+    margin: 5%;
+    margin-left: 0;
+    margin-top: 0;
+    border-radius: 5%;
+    box-shadow: .5em .75em .75em rgb(27, 27, 74);
+    max-height: 22.5em;
+    min-height: 20em;
+    max-width: 19em;
+    min-width: 19em;
+}
+.announcement{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: min(100%, 15em);
+    height: min(33%, 5em);
+    margin-bottom: 7%;
+}
+.announcement h3{
+    margin: 0;
+    font-size: min(120%, 1.15em);
+    width: 100%;
+}
+.announcement p{
+    margin-top: 1%;
+    font-size: min(90%, 1em);
+    color:rgb(27, 27, 74);
+}
+.announcement hr{
+    margin: 0;
+    width: 75%;
 }
 /*Trending Section*/
 .theader{
@@ -361,7 +407,59 @@ h1 > img{
     font-size: 150%;
 }
 .trending{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    padding-left: 10%;
     grid-area: trend;
-    background-color: green;
+    background-color: white;
     border-style: solid;
+    margin: 9%;
+    margin-left: 0;
+    margin-top: 0;
+    border-radius: 5%;
+    box-shadow: .5em .75em .75em rgb(27, 27, 74);
+    max-height: 22.5em;
+    min-height: 20em;
+    max-width: 19em;
+    min-width: 19em;
+}
+.trending a{
+    width: 100%;
+    text-decoration: none;
+}
+.trending a:visited{
+    color: black;
+}
+.trending a:hover{
+    background-color: rgb(115, 99, 223);
+    box-shadow: .5em .75em .75em rgb(27, 27, 74);
+}
+.trend{
+    margin-top: min(5%, 0.6em);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: auto;
+    max-height: 5em;
+    width: 100%;
+}
+.trend > img{
+    width: 30%;
+    height: 90%;
+    max-height: 4.75em;
+}
+.trend > .greeting-panel h3{
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: min(120%, 1.1em);
+    max-height: 2.2em;
+}
+.trend > .greeting-panel p{
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: min(100%, 1em);
+    max-height: 2.2em;
 }
