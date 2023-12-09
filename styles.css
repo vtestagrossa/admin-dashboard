@@ -285,7 +285,7 @@ h1 > img{
     background-color: white;
     border-left-style: solid;
     border-radius: 4%;
-    border-left-color: black;
+    border-left-color: rgb(37, 37, 102);
     border-left-width: 0.6em;
     box-shadow: .5em .75em .75em rgb(27, 27, 74);
     position: relative;
