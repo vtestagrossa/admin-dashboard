@@ -30,7 +30,7 @@ body{
     grid-area: dash;
     border-width: .02em;
     border-style: solid;
-    border-bottom-right-radius: 2em;
+    border-bottom-right-radius: 5em;
     border-top-left-radius: 3em;
     box-shadow: 1em 2em 2em rgb(27, 27, 74);
     position: relative;
@@ -60,6 +60,7 @@ body{
 }
 .dash-link > a:hover{
     background-color:  rgb(115, 99, 223);
+    box-shadow: .125em .5em .5em rgb(27, 27, 74);
 }
 .link-spacer{
     width: 15%;
@@ -227,6 +228,7 @@ h1 > img{
     border-style: solid;
     color: white;
     border-color: white;
+    box-shadow: .125em .5em .5em rgb(27, 27, 74);
 }
 .user-control-right button:active{
     background-color:white;
@@ -277,6 +279,8 @@ h1 > img{
 }
 .project{
     padding: 4%;
+    padding-left: 10%;
+    padding-right: 10%;
     padding-bottom: 0;
     display: flex;
     flex-direction: column;
