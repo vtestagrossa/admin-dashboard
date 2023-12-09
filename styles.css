@@ -34,6 +34,7 @@ body{
     border-top-left-radius: 3em;
     box-shadow: 1em 2em 2em rgb(27, 27, 74);
     position: relative;
+    height: 99vh;
 }
 #dashboard > .dash-link{
     display: flex;
@@ -267,7 +268,8 @@ h1 > img{
 }
 .projects{
     display: grid;
-    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+    grid-template-rows: repeat(3, 1fr);
     padding: 4%;
     padding-top: 0;
     gap: 4%;
@@ -287,6 +289,7 @@ h1 > img{
     border-left-width: 0.6em;
     box-shadow: .5em .75em .75em rgb(27, 27, 74);
     position: relative;
+    max-width: 30em;
 }
 .project h3{
     display: flex;
